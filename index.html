@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Disaster</title>
+
+  <script defer type="text/javascript" src="client.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="col-sm-4 offset-sm-4">
+      <form class="form-inline" id="form-one">
+        <label class="my-1 mr-2" form="inlineFormCustomSelectPref"></label>
+
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+      <option class="options1" selected>Choose...</option>
+    </select>
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+          <input type="checkbox" class="custom-control-input" id="customControlInline">
+        </div>
+        <button type="submit" class="btn btn-info my-1" id="searchResults">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="navTransparent jumbotron text-center">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+        <div class="logo">
+        </div>
+        <div id="my-form">
+        <form>
+          <fieldset active>
+            <div class="form-group">
+              <label class="text-info" for="TextInput">Start Search</label>
+              <input id="searchInput" type="text" id="TextInput" class="form-control" placeholder="Enter Natural Disaster">
+            </div>
+            <button id="searchButton" type="submit" class="btn btn-info">Search</button>
+          </fieldset>
+        </form>
+      </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="navbar col-md-12" id="myNavbar">
+      <a id="home" href="#home">Home</a>
+      <a id="worldview" href="https://worldview.earthdata.nasa.gov/?p=geographic&l=VIIRS_SNPP_CorrectedReflectance_TrueColor(hidden),MODIS_Aqua_CorrectedReflectance_TrueColor(hidden),MODIS_Terra_CorrectedReflectance_TrueColor,Reference_Labels(hidden),Reference_Features(hidden),Coastlines&t=2018-03-15&z=3&v=-198.9353384858132,-48.18664942262163,-2.921864587697101,57.7847068678911&ab=off&as=2018-03-08&ae=2018-03-15&av=3&al=false&e=true">WorldView</a>
+      <a id="contact" href="#contact">Contact</a>
+      <a id="about" href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+</body>
+
+</html>
